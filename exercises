@@ -1,13 +1,13 @@
 /* 1.Create a javascript function which accepts a number as input and insert dashes (-) between each two even numbers.*/
 
-function evenNumbers(input) {
-    let input = parseInt(prompt("Input large number"));
-    for( i = 1; i = input; i++) {
-        if( i % 2 === 0) {
+// function evenNumbers(input) {
+//     let input = parseInt(prompt("Input large number"));
+//     for( i = 1; i = input; i++) {
+//         if( i % 2 === 0) {
 
-        }
-    }
-}
+//         }
+//     }
+// }
     // Nemam idea za prvava, nesto sum promasil od lekciite najverojatno :) Ve molam ako ne e problem pratete mi resenie. Ne znam kako bi gi odvoil brojkite.
 
 /* 2.Create a javascript function that will find all numbers divisible by 7 and 3 in a array from 1 to 100*/
@@ -74,5 +74,5 @@ function evenNumbers(input) {
         }
 	})
 	    document.getElementById("Exit").addEventListener('click', function exit() {
-		let exitAtm = confirm('Please take your card');
+		alert("Please take your card")
 	})
