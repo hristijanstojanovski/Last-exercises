@@ -1,0 +1,78 @@
+/* 1.Create a javascript function which accepts a number as input and insert dashes (-) between each two even numbers.*/
+
+function evenNumbers(input) {
+    let input = parseInt(prompt("Input large number"));
+    for( i = 1; i = input; i++) {
+        if( i % 2 === 0) {
+
+        }
+    }
+}
+    // Nemam idea za prvava, nesto sum promasil od lekciite najverojatno :) Ve molam ako ne e problem pratete mi resenie. Ne znam kako bi gi odvoil brojkite.
+
+/* 2.Create a javascript function that will find all numbers divisible by 7 and 3 in a array from 1 to 100*/
+
+    let array = [];
+
+    for(let i = 1; i <= 100; i++) {
+        if (i % 3 === 0) {
+        array.push(i);
+    
+        if (i % 7 === 0) {
+        array.push(i);
+        }
+    }
+    else if(i % 7 === 0) {
+        array.push(i);
+    }
+    else {
+        continue;
+    }
+    }
+    console.log(array);
+    
+
+    // 3. Create a Javascript ATM machine. 
+//The ATM should have the following functions:
+//- make deposit (this function should add money to the users balance)
+//- make withdrawal (this function should should withdraw money to the users balance)
+//- get the balance (this function should display the current balance of the user)
+//- exit (this function should close the window)
+// create interactive menu using alerts
+// 90 mins
+  
+    let balance = 6000;
+
+    document.getElementById("Balance").addEventListener('click', function myBalance() {
+		alert(`You have ${balance} EUR `);		
+	})
+	document.getElementById("Deposit").addEventListener('click', function Depositing() {
+		var deposit = parseInt(prompt('Enter how much you are depositing and put the money in the ATM.'));
+		if (isNaN(deposit)) {
+            alert('Error: please enter a number!');
+			Depositing();
+        } else if(deposit === '') {
+			alert('Error: please enter a number!');
+			Depositing();
+        } else {
+			alert(`You have ${balance += deposit} EUR`);
+		
+		}
+    })
+	    document.getElementById("Withdraw").addEventListener('click', function iNeedMoney() {
+		let withdrawal = parseInt(prompt('How much money do you need?'));
+		if (isNaN(withdrawal)) {
+			alert("Error: please enter a valid number!");
+			iNeedMoney();
+		} else if(withdrawal === '') {
+            alert("Error: Please enter a valid number!")
+        } else if(withdrawal > balance) {
+            alert("Your asked amount exceeds the available amount. Ask the bank for a loan.")
+        }
+         else {
+			alert(`You have ${balance -= withdrawal} EUR`);
+        }
+	})
+	    document.getElementById("Exit").addEventListener('click', function exit() {
+		let exitAtm = confirm('Please take your card');
+	})
