@@ -13,23 +13,18 @@
 /* 2.Create a javascript function that will find all numbers divisible by 7 and 3 in a array from 1 to 100*/
 
     let array = [];
-
-    for(let i = 1; i <= 100; i++) {
-        if (i % 3 === 0) {
-        array.push(i);
     
-        if (i % 7 === 0) {
+    function pushNumbers() {
+    for(let i = 1; i <= 100; i++) {
+        if (i % 3 === 0 && i % 7 === 0) {
         array.push(i);
-        }
-    }
-    else if(i % 7 === 0) {
-        array.push(i);
-    }
-    else {
+    } else {
         continue;
     }
     }
-    console.log(array);
+    return array
+}
+    console.log(pushNumbers(array));
     
 
     // 3. Create a Javascript ATM machine. 
